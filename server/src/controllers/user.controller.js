@@ -1,7 +1,7 @@
 const express = require("express");
 const userService = require("../services/user.service");
-const UserData = require("../dto/user/userdata");
-const UserUpdateData = require("../dto/user/userupdatedata");
+const UserData = require("../dto/user/request/user.request.dto");
+const UserUpdateData = require("../dto/user/request/user.update.dto");
 
 class UserController {
   async getAll(req, res) {
